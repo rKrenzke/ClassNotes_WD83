@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Raleway';
+    color: red;
+    margin: 20px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    background-color: #111;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 24px 12px;
+    background-color: #111303;
+    color: #fff;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    box-shadow: 2px 2px 5px white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.btn::before{
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle closest-side, #bbb5af, transparent);
+    width: 0;
+    height: 0;
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: 1;
+}
+  
+.btn:hover::before{ width: 150px; height: 150px; }
