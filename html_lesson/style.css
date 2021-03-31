@@ -1,8 +1,19 @@
 h1 {
-    font-family: 'Raleway';
+    font-family: 'Martel Sans', sans-serif;
     color: red;
     margin: 20px;
 }
+
+p{
+    color: white; 
+}
+
+p:hover {
+    color: blue;
+    font-weight: 1000;
+    display: none;
+}
+
 
 body{
     margin: 0;
