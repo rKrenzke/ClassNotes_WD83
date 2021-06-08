@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Specificity-->
+    <div class="main">
+        <p>What will my color be?</p>
+    </div>
+    <!--:checked-->
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox">I say yes</label>
+
+    <br/>
+    <!--:valid, :invalid, :focus-->
+    <input type="email" name="email" id="email" placeholder="Please Enter Your Email" required>
+
+    <fieldset>
+        <legend>Favorite Pizza Toppings</legend>
+        <input type="checkbox" name="topping" value="pineapple">Pineapple
+        <input type="checkbox" name="topping" value="ham">Ham
+        <input type="checkbox" name="topping" value="pepperoni">Pepperoni
+        <input type="checkbox" name="topping" value="onions">Onions
+        <input type="checkbox" name="topping" value="green peppers">Green Peppers
+        <input type="checkbox" name="topping" value="olives">Olives
+        <br>
+        <input type="submit" value="Submit" onclick="validatePizzaTopping()">
+    </fieldset>
+
+    <div class="container">
+        <h1>Hello there!</h1>
+        <div class="circle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

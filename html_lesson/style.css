@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     font-family: 'Martel Sans', sans-serif;
     color: red;
     margin: 20px;
@@ -19,8 +19,8 @@ body{
     margin: 0;
     height: 100vh;
     display: flex; justify-content: center; align-items: center;
-    background-color: #111;
-}
+    /* background-color: #111; */
+/* }
 
 .btn{
     text-decoration: none;
@@ -49,3 +49,76 @@ body{
 }
   
 .btn:hover::before{ width: 150px; height: 150px; }
+
+
+
+
+
+.child{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid blue;
+    font-family: 'Roboto', sans-serif;
+}  */
+
+
+html, body{
+    border: 0;
+    margin: 0;
+}
+
+
+.navMenu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(87, 84, 84);
+    margin: 0;
+    width: 100vw;
+}
+
+.navLinks{
+    display: flex;
+    list-style-type: none;
+}
+
+#navLink{
+    padding: 0px 20px;
+    color:honeydew;
+    font-family: 'Roboto';
+}
+
+#navLink:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+#child{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.h3Tag{
+    font-size: 20px;
+    /* font-weight: 800; */
+    font-family: 'Roboto';
+    letter-spacing: .15rem;
+    /* font-weight: 1000; */
+    margin-left: 30%;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    width: 220px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    
+}
